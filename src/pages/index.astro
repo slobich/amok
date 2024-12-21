@@ -1,0 +1,36 @@
+---
+import 'the-new-css-reset/css/reset.css';
+import "../styles/main.css";
+import { Image } from 'astro:assets';
+import logo from '../images/logo.svg';
+
+const siteUrl = `${Astro.site}slobich-graphics/`;
+---
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Amok</title>
+    <meta name="description" content="HardCore punk band from Croatia">
+  </head>
+
+  <body>
+    <main>
+      <a href={siteUrl}>
+        <Image src={logo} alt="Amok logo" loading="eager" />
+        <h1>5L081CH.6R4PH1C5</h1>
+      </a>
+
+      <p>Amok was a HardCore punk band from Croatia.</p>
+
+      <ul>
+        <li>
+          <a href="https://amok.bandcamp.com/">Bandcamp</a>
+        </li>
+        <li>
+          <a href="https://www.facebook.com/amokpunx/">Facebook</a>
+        </li>
+      </ul>
+    </main>
+  </body>
+</html>
