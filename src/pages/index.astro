@@ -3,8 +3,6 @@ import 'the-new-css-reset/css/reset.css';
 import "../styles/main.css";
 import { Image } from 'astro:assets';
 import logo from '../images/logo.svg';
-
-const siteUrl = `${Astro.site}slobich-graphics/`;
 ---
 <html lang="en">
   <head>
@@ -16,7 +14,7 @@ const siteUrl = `${Astro.site}slobich-graphics/`;
 
   <body>
     <main>
-      <a href={siteUrl}>
+      <a href={Astro.site}>
         <Image src={logo} alt="Amok logo" loading="eager" />
         <h1>5L081CH.6R4PH1C5</h1>
       </a>
